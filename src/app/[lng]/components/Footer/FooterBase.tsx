@@ -6,7 +6,7 @@ import { languages } from '../../../i18n/settings'
 export const FooterBase = ({ i18n, lng, path = '' }: { i18n: i18n, lng: string, path: string }) => {
   const t = i18n.getFixedT(lng, 'footer')
   return (
-    <footer>
+    <footer className='h-96 p-20 bg-red-100'>
       <Trans i18nKey="languageSwitcher" t={t}>
         {/* @ts-expect-error Trans interpolation */}
         Switch from <strong>{{lng}}</strong> to:{' '}

@@ -15,13 +15,16 @@ export default async function Page({ params: { lng } }: {
 
   return (
     <>
-      <main>
+      <main className='custom-img from-primary mb-12 flex h-screen items-center justify-center bg-cover bg-fixed bg-center'>
+      <div className="absolute inset-0 z-[2] bg-black/30" />
+      <div className="z-[2] mt-[-20rem] p-5 text-white">
         <Header heading={t('h1')} />
-        <h2>
-          <Trans t={t} i18nKey="welcome">
+        <h2 className="text-5xl font-bold">
+          <Trans t={t} i18nKey="welcome" className="text-5xl font-bold">
             Welcome to Next.js v13 <small>appDir</small> and i18next
           </Trans>
         </h2>
+        </div>
         <div style={{ width: '100%' }}>
           <p>
             <Trans t={t} i18nKey="blog.text">
